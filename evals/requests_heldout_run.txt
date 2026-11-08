@@ -1,0 +1,15 @@
+
+requests: 24/35 recognised (0 wrong target); near misses read as requests: 0/31
+  miss [request] h001: expected nl, got None  | Could we do the rest of this call in Dutch?
+  miss [request] h003: expected en, got None  | Can you talk to me in English, please?
+  miss [request] h004: expected nl, got None  | Would it be possible to continue in Dutch?
+  miss [request] h007: expected nl, got None  | I'd rather we spoke Dutch.
+  miss [request] h008: expected ar, got None  | Do you happen to speak Arabic?
+  miss [request] h023: expected en, got None  | Kunnen we het gesprek in het Engels voeren?
+  miss [request] h024: expected en, got None  | Zou u Engels kunnen praten?
+  miss [request] h029: expected en, got None  | Is Engels ook goed?
+  miss [request] h043: expected ar, got None  | هل ممكن نكمل المكالمة بالعربي؟
+  miss [request] h045: expected nl, got None  | هل تجيد اللغة الهولندية؟
+  miss [request] h050: expected ar, got None  | يا ريت نحكي عربي
+BELOW FLOOR:
+  requests: recall 0.686 < 0.85

@@ -46,8 +46,9 @@ ttft-check:      ## the recorded live TTFT run still matches its committed summa
 	$(CLI) ttft-report $(TTFT) --review fixtures/live-ttft-review.json \
 	  --check fixtures/live-ttft.summary.json
 
-detector-check:  ## detector + request accuracy on the labelled corpora, against frozen floors
+detector-check:  ## detector + request accuracy (dev corpora) against frozen floors; held-out: no regression
 	$(CLI) eval-detector --floors evals/detector_floors.json
+	$(CLI) eval-detector --requests data/requests_heldout.jsonl --floors evals/heldout_floors.json
 
 record-ttft:     ## LIVE: re-record TTFT at thinking minimal and low (costs money)
 	$(LIVE) $(CLI) record-ttft --thinking minimal --out $(TTFT)

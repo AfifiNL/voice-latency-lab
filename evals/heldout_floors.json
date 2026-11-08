@@ -1,0 +1,25 @@
+{
+  "_written": "2026-11-08 after the single held-out run of data/requests_heldout.jsonl at code commit 366c733 (output: evals/requests_heldout_run.txt). The 0.85 recall floor was NOT met (0.686). This file guards against regression only: recall may not fall below the single-run result, and no near miss may be read as a request. The held-out set is spent: fixing its misses would be tuning on it.",
+  "languages": {
+    "en": {
+      "min_correct": 0.85,
+      "max_wrong": 0.03
+    },
+    "nl": {
+      "min_correct": 0.85,
+      "max_wrong": 0.03
+    },
+    "ar": {
+      "min_correct": 0.95,
+      "max_wrong": 0.03
+    }
+  },
+  "undetermined_expected": {
+    "min_undetermined": 0.8
+  },
+  "requests": {
+    "min_recall": 0.686,
+    "max_false_positive_rate": 0.0,
+    "max_wrong_target": 0
+  }
+}

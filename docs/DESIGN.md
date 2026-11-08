@@ -28,16 +28,38 @@ languages that share short words with English (Polish "a", "i", "to") can be rea
 ("ja ja ja", "no no no") and politeness words ("ok", "thanks", "شكرا") are not evidence of a
 language change.
 
-**Explicit requests bypass the hysteresis.** Hysteresis protects against switching on a quote
-or a stray sentence; it should not make a caller who asks "can we speak Dutch?" wait another
-turn. Requests are recognised by patterns, not by a model: a target language name inside a
-request frame, in any of the three languages (`switch_requests.py`). The frames are narrow on
-purpose, because a false request switches the call at once with no second chance: a mention
-("my Dutch is bad", "the manual is in English"), a third-person statement ("my children speak
-Dutch"), a negated request in the same clause ("please don't switch to Dutch", "لا تتكلم
-الإنجليزية") and a turn asking for two languages are all ignored. Arabic is matched after
-removing diacritics and unifying alef, taa marbuta and alef maqsura, so "بالعربية", "بالعربي" and
-"بِالعَرَبِيَّةِ" are the same. A request for the current language cancels a pending switch.
+**Explicit requests bypass the hysteresis, and precision comes first.** Hysteresis protects
+against switching on a quote or a stray sentence; it should not make a caller who asks "can we
+speak Dutch?" wait another turn. But a false request switches the call at once with no second
+chance, so recognition (`switch_requests.py`) is built to say no when in doubt:
+
+- **Tokens and clauses, not substrings.** Text is normalised (case, Arabic diacritics, alef,
+  taa marbuta, alef maqsura, Persian-keyboard ی/ک) and split into sentences and clauses. Arabic
+  words are matched as whole tokens, so "بنتكلم" (we speak, habitual: a statement) is not "نتكلم".
+- **A frame with the target right after its verb.** Only filler words may stand between them, so
+  in "can we speak dutch my english is not great" the target is Dutch and the later "English" is a
+  mention, not a second request.
+- **Vetoes.** A negation, stop or why/did word earlier in the clause; reported speech or quotation
+  marks earlier in the sentence; another person as subject (my wife, he, mijn vrouw, زوجتي) or as
+  addressee ("to my mother", "مع امي"); a document or sending word anywhere in the clause; an
+  alternative right after the target ("Dutch or English", "عربي ولا انجليزي"). Arabic لا and ما
+  are vetoes only directly before a verb or a want/prefer word, because "لا بالعربي لو سمحت" (no,
+  in Arabic please) and "ما رأيك نتكلم عربي؟" (what do you think, shall we speak Arabic?) are
+  requests. A clause-initial "no" is allowed only before "in <language>" ("no, in Dutch please"),
+  never before a bare language ("no Dutch please").
+- **Short clauses.** "<language> please" counts only when the clause is nothing else.
+
+**A held-out set, written before the code and run once.** A review showed that the earlier test
+split was not held out (unit tests quoted it and patterns were written against it). The timeline
+for this round is in the commits: `b5d73e7` relabels every earlier request item as `dev`, adds
+the reviewer's counterexamples to `dev`, adds `data/requests_heldout.jsonl` (66 new items) and
+sets the near-miss ceiling to 0; `366c733` is the rewritten code, frozen; the next commit records
+the single held-out run (`evals/requests_heldout_run.txt`): 24/35 requests (0.686, below the
+0.85 floor), 0 wrong targets, 0/31 near misses. The misses were not fixed (that would be tuning
+on the held-out set); `evals/heldout_floors.json` keeps the set as a no-regression guard at its
+single-run values. Limits of this discipline: the same person wrote the held-out items shortly
+before the code, and some frames added in this round (the Dutch and Arabic forms of "let's")
+match phrasings that person had just written, so held-out recall is, if anything, optimistic.
 
 **Hysteresis with "ignore, don't reset".** Non-substantial turns neither count towards a switch
 nor cancel one in progress. Otherwise "ja" between two Dutch sentences would either switch too
@@ -65,6 +87,9 @@ with the wrong target. History, so the numbers can be judged:
 4. Afterwards the demo showed that "can we go back to English?" was not recognised; "go back
    (to)" and "switch back to" were added to the English request frames. Both splits were re-run
    with unchanged results.
+5. Review round 3: the 6 short `test` items that unit tests quote were moved to `dev`; the
+   request split was dropped (all `dev`) and replaced by a held-out set (above). Detector code
+   did not change in this round.
 
 The corpus is the author's own clean text, so these numbers mostly show consistency and guard
 against regressions; they do not predict accuracy on speech-to-text output.
@@ -146,6 +171,7 @@ checks it against the real event classes after an upgrade.
 |---|---|---|
 | `switch_after` | 2 | one turn can be a quote, a name or a polite word in another language |
 | explicit requests | on, narrow frames | a false request switches at once, so precision before recall |
+| near misses read as requests | 0 (dev and held-out) | the floor allows none |
 | detector floors | `evals/detector_floors.json` | written before the first corpus run |
 | `min_words` | 3 distinct non-filler words | below this, function-word evidence is too thin to act on |
 | `min_function_words`, `min_margin` | 2, 0.5 | a single function word, or a near tie, is not evidence |
