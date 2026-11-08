@@ -197,21 +197,21 @@
 {"id": "d197", "split": "dev", "text": "میرا آرڈر ابھی تک نہیں آیا", "expected": null, "kind": "other"}
 {"id": "d198", "split": "test", "text": "Ik need help with mijn order please", "expected": null, "kind": "mixed"}
 {"id": "d199", "split": "dev", "text": "Can I pay met pin?", "expected": null, "kind": "mixed"}
-{"id": "d200", "split": "test", "text": "ok", "expected": null, "kind": "short"}
+{"id": "d200", "split": "dev", "text": "ok", "expected": null, "kind": "short"}
 {"id": "d201", "split": "dev", "text": "ja", "expected": null, "kind": "short"}
-{"id": "d202", "split": "test", "text": "nee", "expected": null, "kind": "short"}
+{"id": "d202", "split": "dev", "text": "nee", "expected": null, "kind": "short"}
 {"id": "d203", "split": "dev", "text": "yes", "expected": null, "kind": "short"}
-{"id": "d204", "split": "test", "text": "شكرا", "expected": null, "kind": "short"}
+{"id": "d204", "split": "dev", "text": "شكرا", "expected": null, "kind": "short"}
 {"id": "d205", "split": "dev", "text": "12345", "expected": null, "kind": "short"}
-{"id": "d206", "split": "test", "text": "Westerbrook", "expected": null, "kind": "short"}
+{"id": "d206", "split": "dev", "text": "Westerbrook", "expected": null, "kind": "short"}
 {"id": "d207", "split": "dev", "text": "uh hmm", "expected": null, "kind": "short"}
-{"id": "d208", "split": "test", "text": "ja ja ja", "expected": null, "kind": "short"}
+{"id": "d208", "split": "dev", "text": "ja ja ja", "expected": null, "kind": "short"}
 {"id": "d209", "split": "dev", "text": "no no no", "expected": null, "kind": "short"}
 {"id": "d210", "split": "test", "text": "Order A-1042", "expected": null, "kind": "short"}
 {"id": "d211", "split": "dev", "text": "sorry?", "expected": null, "kind": "short"}
 {"id": "d212", "split": "test", "text": "hello?", "expected": null, "kind": "short"}
 {"id": "d213", "split": "dev", "text": "alright", "expected": null, "kind": "short"}
-{"id": "d214", "split": "test", "text": "مرحبا", "expected": null, "kind": "short"}
+{"id": "d214", "split": "dev", "text": "مرحبا", "expected": null, "kind": "short"}
 {"id": "d215", "split": "dev", "text": "ok, thanks", "expected": null, "kind": "short"}
 {"id": "d216", "split": "test", "text": "Hello, ik wil graag een afspraak maken voor volgende week.", "expected": "nl", "kind": "mixed"}
 {"id": "d217", "split": "dev", "text": "Sorry hoor, can you tell me where my order is?", "expected": "en", "kind": "mixed"}

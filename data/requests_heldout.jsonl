@@ -1,0 +1,66 @@
+{"id": "h001", "split": "heldout", "text_language": "en", "text": "Could we do the rest of this call in Dutch?", "expected": "nl"}
+{"id": "h002", "split": "heldout", "text_language": "en", "text": "Is it alright if I speak Arabic?", "expected": "ar"}
+{"id": "h003", "split": "heldout", "text_language": "en", "text": "Can you talk to me in English, please?", "expected": "en"}
+{"id": "h004", "split": "heldout", "text_language": "en", "text": "Would it be possible to continue in Dutch?", "expected": "nl"}
+{"id": "h005", "split": "heldout", "text_language": "en", "text": "Please answer in Arabic.", "expected": "ar"}
+{"id": "h006", "split": "heldout", "text_language": "en", "text": "Let's switch over to English.", "expected": "en"}
+{"id": "h007", "split": "heldout", "text_language": "en", "text": "I'd rather we spoke Dutch.", "expected": "nl"}
+{"id": "h008", "split": "heldout", "text_language": "en", "text": "Do you happen to speak Arabic?", "expected": "ar"}
+{"id": "h009", "split": "heldout", "text_language": "en", "text": "Sorry, English please.", "expected": "en"}
+{"id": "h010", "split": "heldout", "text_language": "en", "text": "Can we carry on in Dutch?", "expected": "nl"}
+{"id": "h011", "split": "heldout", "text_language": "en", "text": "Can you just speak English?", "expected": "en"}
+{"id": "h012", "split": "heldout", "text_language": "en", "text": "Switch to Arabic, please.", "expected": "ar"}
+{"id": "h013", "split": "heldout", "text_language": "en", "text": "I used to speak Dutch as a child.", "expected": null}
+{"id": "h014", "split": "heldout", "text_language": "en", "text": "Why are you speaking Dutch to me?", "expected": null}
+{"id": "h015", "split": "heldout", "text_language": "en", "text": "Please stop answering in English.", "expected": null}
+{"id": "h016", "split": "heldout", "text_language": "en", "text": "Can you email me the receipt in Dutch?", "expected": null}
+{"id": "h017", "split": "heldout", "text_language": "en", "text": "My husband would prefer English.", "expected": null}
+{"id": "h018", "split": "heldout", "text_language": "en", "text": "She asked me if we could speak Arabic.", "expected": null}
+{"id": "h019", "split": "heldout", "text_language": "en", "text": "Is your website available in English?", "expected": null}
+{"id": "h020", "split": "heldout", "text_language": "en", "text": "I don't speak Dutch very well, sorry.", "expected": null}
+{"id": "h021", "split": "heldout", "text_language": "en", "text": "There is no need to change to Arabic.", "expected": null}
+{"id": "h022", "split": "heldout", "text_language": "en", "text": "Did you just switch to English?", "expected": null}
+{"id": "h023", "split": "heldout", "text_language": "nl", "text": "Kunnen we het gesprek in het Engels voeren?", "expected": "en"}
+{"id": "h024", "split": "heldout", "text_language": "nl", "text": "Zou u Engels kunnen praten?", "expected": "en"}
+{"id": "h025", "split": "heldout", "text_language": "nl", "text": "Graag in het Nederlands verder.", "expected": "nl"}
+{"id": "h026", "split": "heldout", "text_language": "nl", "text": "Kunt u in het Arabisch antwoorden?", "expected": "ar"}
+{"id": "h027", "split": "heldout", "text_language": "nl", "text": "Laten we Engels praten.", "expected": "en"}
+{"id": "h028", "split": "heldout", "text_language": "nl", "text": "Ik praat liever Engels.", "expected": "en"}
+{"id": "h029", "split": "heldout", "text_language": "nl", "text": "Is Engels ook goed?", "expected": "en"}
+{"id": "h030", "split": "heldout", "text_language": "nl", "text": "Spreekt u misschien Arabisch?", "expected": "ar"}
+{"id": "h031", "split": "heldout", "text_language": "nl", "text": "Kan ik in het Nederlands verder?", "expected": "nl"}
+{"id": "h032", "split": "heldout", "text_language": "nl", "text": "Nederlands graag.", "expected": "nl"}
+{"id": "h033", "split": "heldout", "text_language": "nl", "text": "Ik spreek een beetje Nederlands.", "expected": null}
+{"id": "h034", "split": "heldout", "text_language": "nl", "text": "Waarom praat u ineens Engels?", "expected": null}
+{"id": "h035", "split": "heldout", "text_language": "nl", "text": "Stop alstublieft met Engels praten.", "expected": null}
+{"id": "h036", "split": "heldout", "text_language": "nl", "text": "Kunt u de offerte in het Engels sturen?", "expected": null}
+{"id": "h037", "split": "heldout", "text_language": "nl", "text": "Mijn man spreekt liever Arabisch.", "expected": null}
+{"id": "h038", "split": "heldout", "text_language": "nl", "text": "Hij vroeg of we Engels konden praten.", "expected": null}
+{"id": "h039", "split": "heldout", "text_language": "nl", "text": "Is de website ook in het Engels?", "expected": null}
+{"id": "h040", "split": "heldout", "text_language": "nl", "text": "Ik wil niet in het Engels verder.", "expected": null}
+{"id": "h041", "split": "heldout", "text_language": "nl", "text": "Er is geen reden om naar het Engels over te stappen.", "expected": null}
+{"id": "h042", "split": "heldout", "text_language": "nl", "text": "Mijn dochter leert Arabisch.", "expected": null}
+{"id": "h043", "split": "heldout", "text_language": "ar", "text": "هل ممكن نكمل المكالمة بالعربي؟", "expected": "ar"}
+{"id": "h044", "split": "heldout", "text_language": "ar", "text": "لو سمحت كلمني بالإنجليزي", "expected": "en"}
+{"id": "h045", "split": "heldout", "text_language": "ar", "text": "هل تجيد اللغة الهولندية؟", "expected": "nl"}
+{"id": "h046", "split": "heldout", "text_language": "ar", "text": "أفضّل أن نتحدث بالعربية", "expected": "ar"}
+{"id": "h047", "split": "heldout", "text_language": "ar", "text": "خلينا نتكلم انجليزي", "expected": "en"}
+{"id": "h048", "split": "heldout", "text_language": "ar", "text": "ممكن ترد علي بالعربي؟", "expected": "ar"}
+{"id": "h049", "split": "heldout", "text_language": "ar", "text": "تتكلم انجليزي؟", "expected": "en"}
+{"id": "h050", "split": "heldout", "text_language": "ar", "text": "يا ريت نحكي عربي", "expected": "ar"}
+{"id": "h051", "split": "heldout", "text_language": "ar", "text": "بدي احكي انجليزي لو سمحت", "expected": "en"}
+{"id": "h052", "split": "heldout", "text_language": "ar", "text": "دعنا نتحدث بالهولندية", "expected": "nl"}
+{"id": "h053", "split": "heldout", "text_language": "ar", "text": "ابني يتكلم الهولندية في المدرسة", "expected": null}
+{"id": "h054", "split": "heldout", "text_language": "ar", "text": "ليش صرت تتكلم انجليزي؟", "expected": null}
+{"id": "h055", "split": "heldout", "text_language": "ar", "text": "توقف عن الكلام بالإنجليزية من فضلك", "expected": null}
+{"id": "h056", "split": "heldout", "text_language": "ar", "text": "ممكن ترسل لي العقد بالعربي؟", "expected": null}
+{"id": "h057", "split": "heldout", "text_language": "ar", "text": "زوجتي تفضل الإنجليزية", "expected": null}
+{"id": "h058", "split": "heldout", "text_language": "ar", "text": "قالت لي: نتكلم عربي", "expected": null}
+{"id": "h059", "split": "heldout", "text_language": "ar", "text": "هل الموقع متوفر بالهولندية؟", "expected": null}
+{"id": "h060", "split": "heldout", "text_language": "ar", "text": "ما أفهم الهولندية كويس", "expected": null}
+{"id": "h061", "split": "heldout", "text_language": "ar", "text": "مش لازم نتكلم انجليزي", "expected": null}
+{"id": "h062", "split": "heldout", "text_language": "ar", "text": "أمي لا تتكلم الإنجليزية", "expected": null}
+{"id": "h063", "split": "heldout", "text_language": "en", "text": "Can we speak Arabic or Dutch?", "expected": null}
+{"id": "h064", "split": "heldout", "text_language": "en", "text": "Ok so can we speak english my dutch is really bad", "expected": "en"}
+{"id": "h065", "split": "heldout", "text_language": "nl", "text": "Nee, in het Engels graag.", "expected": "en"}
+{"id": "h066", "split": "heldout", "text_language": "ar", "text": "لا، بالإنجليزي لو سمحت", "expected": "en"}

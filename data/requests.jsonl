@@ -1,57 +1,100 @@
 {"id": "r001", "split": "dev", "text_language": "en", "text": "Can we speak Dutch?", "expected": "nl"}
-{"id": "r002", "split": "test", "text_language": "en", "text": "Could you please continue in English?", "expected": "en"}
+{"id": "r002", "split": "dev", "text_language": "en", "text": "Could you please continue in English?", "expected": "en"}
 {"id": "r003", "split": "dev", "text_language": "en", "text": "In English please.", "expected": "en"}
-{"id": "r004", "split": "test", "text_language": "en", "text": "Dutch please.", "expected": "nl"}
+{"id": "r004", "split": "dev", "text_language": "en", "text": "Dutch please.", "expected": "nl"}
 {"id": "r005", "split": "dev", "text_language": "en", "text": "Do you speak Arabic?", "expected": "ar"}
-{"id": "r006", "split": "test", "text_language": "en", "text": "Please switch to Dutch.", "expected": "nl"}
+{"id": "r006", "split": "dev", "text_language": "en", "text": "Please switch to Dutch.", "expected": "nl"}
 {"id": "r007", "split": "dev", "text_language": "en", "text": "I'd prefer English if that's ok.", "expected": "en"}
-{"id": "r008", "split": "test", "text_language": "en", "text": "Let's continue in Dutch.", "expected": "nl"}
+{"id": "r008", "split": "dev", "text_language": "en", "text": "Let's continue in Dutch.", "expected": "nl"}
 {"id": "r009", "split": "dev", "text_language": "en", "text": "Thanks so far, but can we continue in Dutch? My English is not great.", "expected": "nl"}
-{"id": "r010", "split": "test", "text_language": "en", "text": "Speak Arabic please.", "expected": "ar"}
+{"id": "r010", "split": "dev", "text_language": "en", "text": "Speak Arabic please.", "expected": "ar"}
 {"id": "r011", "split": "dev", "text_language": "en", "text": "Can you reply in Dutch?", "expected": "nl"}
-{"id": "r012", "split": "test", "text_language": "en", "text": "I would rather speak English.", "expected": "en"}
+{"id": "r012", "split": "dev", "text_language": "en", "text": "I would rather speak English.", "expected": "en"}
 {"id": "r013", "split": "dev", "text_language": "en", "text": "My Dutch is bad.", "expected": null}
-{"id": "r014", "split": "test", "text_language": "en", "text": "I'm learning Dutch at school.", "expected": null}
+{"id": "r014", "split": "dev", "text_language": "en", "text": "I'm learning Dutch at school.", "expected": null}
 {"id": "r015", "split": "dev", "text_language": "en", "text": "Is the manual in Dutch?", "expected": null}
-{"id": "r016", "split": "test", "text_language": "en", "text": "Can you send me the manual in Dutch?", "expected": null}
+{"id": "r016", "split": "dev", "text_language": "en", "text": "Can you send me the manual in Dutch?", "expected": null}
 {"id": "r017", "split": "dev", "text_language": "en", "text": "Please don't switch to Dutch.", "expected": null}
-{"id": "r018", "split": "test", "text_language": "en", "text": "My children speak Dutch at school.", "expected": null}
+{"id": "r018", "split": "dev", "text_language": "en", "text": "My children speak Dutch at school.", "expected": null}
 {"id": "r019", "split": "dev", "text_language": "en", "text": "My Dutch, please excuse it, is rusty.", "expected": null}
-{"id": "r020", "split": "test", "text_language": "en", "text": "The English version of the form is fine.", "expected": null}
+{"id": "r020", "split": "dev", "text_language": "en", "text": "The English version of the form is fine.", "expected": null}
 {"id": "r021", "split": "dev", "text_language": "nl", "text": "Kunnen we in het Engels verder?", "expected": "en"}
-{"id": "r022", "split": "test", "text_language": "nl", "text": "Kunt u Nederlands praten?", "expected": "nl"}
+{"id": "r022", "split": "dev", "text_language": "nl", "text": "Kunt u Nederlands praten?", "expected": "nl"}
 {"id": "r023", "split": "dev", "text_language": "nl", "text": "Spreekt u Engels?", "expected": "en"}
-{"id": "r024", "split": "test", "text_language": "nl", "text": "In het Engels graag.", "expected": "en"}
+{"id": "r024", "split": "dev", "text_language": "nl", "text": "In het Engels graag.", "expected": "en"}
 {"id": "r025", "split": "dev", "text_language": "nl", "text": "Ik spreek liever Nederlands.", "expected": "nl"}
-{"id": "r026", "split": "test", "text_language": "nl", "text": "Mag het ook in het Arabisch?", "expected": "ar"}
+{"id": "r026", "split": "dev", "text_language": "nl", "text": "Mag het ook in het Arabisch?", "expected": "ar"}
 {"id": "r027", "split": "dev", "text_language": "nl", "text": "Kunnen we overschakelen naar het Engels?", "expected": "en"}
-{"id": "r028", "split": "test", "text_language": "nl", "text": "Engels alstublieft.", "expected": "en"}
+{"id": "r028", "split": "dev", "text_language": "nl", "text": "Engels alstublieft.", "expected": "en"}
 {"id": "r029", "split": "dev", "text_language": "nl", "text": "Spreek je ook Arabisch?", "expected": "ar"}
-{"id": "r030", "split": "test", "text_language": "nl", "text": "Kunnen wij misschien Engels praten?", "expected": "en"}
+{"id": "r030", "split": "dev", "text_language": "nl", "text": "Kunnen wij misschien Engels praten?", "expected": "en"}
 {"id": "r031", "split": "dev", "text_language": "nl", "text": "Mijn Engels is niet zo goed.", "expected": null}
-{"id": "r032", "split": "test", "text_language": "nl", "text": "De handleiding is in het Engels.", "expected": null}
+{"id": "r032", "split": "dev", "text_language": "nl", "text": "De handleiding is in het Engels.", "expected": null}
 {"id": "r033", "split": "dev", "text_language": "nl", "text": "Ik leer graag Nederlands.", "expected": null}
-{"id": "r034", "split": "test", "text_language": "nl", "text": "Niet in het Engels alstublieft.", "expected": null}
+{"id": "r034", "split": "dev", "text_language": "nl", "text": "Niet in het Engels alstublieft.", "expected": null}
 {"id": "r035", "split": "dev", "text_language": "nl", "text": "Mijn kinderen spreken Nederlands.", "expected": null}
-{"id": "r036", "split": "test", "text_language": "nl", "text": "Is er ook een Engelse versie van het formulier?", "expected": null}
+{"id": "r036", "split": "dev", "text_language": "nl", "text": "Is er ook een Engelse versie van het formulier?", "expected": null}
 {"id": "r037", "split": "dev", "text_language": "nl", "text": "Mijn collega spreekt Arabisch.", "expected": null}
-{"id": "r038", "split": "test", "text_language": "ar", "text": "هل يمكن أن نتحدث بالعربية؟", "expected": "ar"}
+{"id": "r038", "split": "dev", "text_language": "ar", "text": "هل يمكن أن نتحدث بالعربية؟", "expected": "ar"}
 {"id": "r039", "split": "dev", "text_language": "ar", "text": "ممكن نتكلم انجليزي؟", "expected": "en"}
-{"id": "r040", "split": "test", "text_language": "ar", "text": "هل تتحدث الإنجليزية؟", "expected": "en"}
+{"id": "r040", "split": "dev", "text_language": "ar", "text": "هل تتحدث الإنجليزية؟", "expected": "en"}
 {"id": "r041", "split": "dev", "text_language": "ar", "text": "بالعربي لو سمحت", "expected": "ar"}
-{"id": "r042", "split": "test", "text_language": "ar", "text": "تكلم معي بالهولندية من فضلك", "expected": "nl"}
+{"id": "r042", "split": "dev", "text_language": "ar", "text": "تكلم معي بالهولندية من فضلك", "expected": "nl"}
 {"id": "r043", "split": "dev", "text_language": "ar", "text": "أريد التحدث بالعربية", "expected": "ar"}
-{"id": "r044", "split": "test", "text_language": "ar", "text": "أفضل الإنجليزية", "expected": "en"}
+{"id": "r044", "split": "dev", "text_language": "ar", "text": "أفضل الإنجليزية", "expected": "en"}
 {"id": "r045", "split": "dev", "text_language": "ar", "text": "ممكن تكلمني عربي؟", "expected": "ar"}
-{"id": "r046", "split": "test", "text_language": "ar", "text": "لو سمحت بالإنجليزي", "expected": "en"}
+{"id": "r046", "split": "dev", "text_language": "ar", "text": "لو سمحت بالإنجليزي", "expected": "en"}
 {"id": "r047", "split": "dev", "text_language": "ar", "text": "نكمل بالعربي إذا ممكن", "expected": "ar"}
-{"id": "r048", "split": "test", "text_language": "ar", "text": "عربيتي ضعيفة", "expected": null}
+{"id": "r048", "split": "dev", "text_language": "ar", "text": "عربيتي ضعيفة", "expected": null}
 {"id": "r049", "split": "dev", "text_language": "ar", "text": "أدرس اللغة الهولندية في الجامعة", "expected": null}
-{"id": "r050", "split": "test", "text_language": "ar", "text": "الكتيب باللغة الإنجليزية فقط", "expected": null}
+{"id": "r050", "split": "dev", "text_language": "ar", "text": "الكتيب باللغة الإنجليزية فقط", "expected": null}
 {"id": "r051", "split": "dev", "text_language": "ar", "text": "لا تتكلم الإنجليزية من فضلك", "expected": null}
-{"id": "r052", "split": "test", "text_language": "ar", "text": "أختي تتكلم الهولندية", "expected": null}
+{"id": "r052", "split": "dev", "text_language": "ar", "text": "أختي تتكلم الهولندية", "expected": null}
 {"id": "r053", "split": "dev", "text_language": "ar", "text": "هل النموذج متوفر بالعربية؟", "expected": null}
-{"id": "r054", "split": "test", "text_language": "ar", "text": "زوجي لا يفهم الهولندية", "expected": null}
+{"id": "r054", "split": "dev", "text_language": "ar", "text": "زوجي لا يفهم الهولندية", "expected": null}
 {"id": "r055", "split": "dev", "text_language": "en", "text": "Can we speak Dutch or English?", "expected": null}
-{"id": "r056", "split": "test", "text_language": "en", "text": "I'm not sure, can we speak Dutch?", "expected": "nl"}
+{"id": "r056", "split": "dev", "text_language": "en", "text": "I'm not sure, can we speak Dutch?", "expected": "nl"}
 {"id": "r057", "split": "dev", "text_language": "en", "text": "No, in Dutch please.", "expected": "nl"}
+{"id": "r058", "split": "dev", "text_language": "en", "text": "I don't want to switch to Dutch.", "expected": null}
+{"id": "r059", "split": "dev", "text_language": "en", "text": "There's no need to switch to English.", "expected": null}
+{"id": "r060", "split": "dev", "text_language": "en", "text": "Why did you switch to Dutch?", "expected": null}
+{"id": "r061", "split": "dev", "text_language": "en", "text": "No Dutch please.", "expected": null}
+{"id": "r062", "split": "dev", "text_language": "en", "text": "Stop speaking Dutch, please.", "expected": null}
+{"id": "r063", "split": "dev", "text_language": "nl", "text": "Hou op met Nederlands alsjeblieft.", "expected": null}
+{"id": "r064", "split": "dev", "text_language": "ar", "text": "بطل تحكي عربي لو سمحت", "expected": null}
+{"id": "r065", "split": "dev", "text_language": "ar", "text": "خلاص بلاش عربي لو سمحت", "expected": null}
+{"id": "r066", "split": "dev", "text_language": "en", "text": "Can you send me the manual in Dutch, please?", "expected": null}
+{"id": "r067", "split": "dev", "text_language": "nl", "text": "Ik wil de factuur graag in het Engels ontvangen.", "expected": null}
+{"id": "r068", "split": "dev", "text_language": "ar", "text": "أرسل لي الفاتورة بالإنجليزية من فضلك", "expected": null}
+{"id": "r069", "split": "dev", "text_language": "nl", "text": "Mijn vrouw spreekt liever Engels.", "expected": null}
+{"id": "r070", "split": "dev", "text_language": "en", "text": "Could you speak Dutch to my mother when she calls?", "expected": null}
+{"id": "r071", "split": "dev", "text_language": "en", "text": "He said \"can we speak Dutch?\"", "expected": null}
+{"id": "r072", "split": "dev", "text_language": "ar", "text": "قال لي: ممكن نتكلم عربي؟", "expected": null}
+{"id": "r073", "split": "dev", "text_language": "ar", "text": "إحنا بنتكلم عربي في البيت", "expected": null}
+{"id": "r074", "split": "dev", "text_language": "en", "text": "Can we keep speaking English?", "expected": "en"}
+{"id": "r075", "split": "dev", "text_language": "en", "text": "Can we stay in English?", "expected": "en"}
+{"id": "r076", "split": "dev", "text_language": "en", "text": "Would you mind speaking Dutch?", "expected": "nl"}
+{"id": "r077", "split": "dev", "text_language": "en", "text": "Is it possible to speak English?", "expected": "en"}
+{"id": "r078", "split": "dev", "text_language": "en", "text": "Do you speak any English?", "expected": "en"}
+{"id": "r079", "split": "dev", "text_language": "nl", "text": "Kan het ook in het Engels?", "expected": "en"}
+{"id": "r080", "split": "dev", "text_language": "nl", "text": "Kunt u Engels?", "expected": "en"}
+{"id": "r081", "split": "dev", "text_language": "nl", "text": "Mag ik Engels spreken?", "expected": "en"}
+{"id": "r082", "split": "dev", "text_language": "nl", "text": "Kunnen we verder in het Engels?", "expected": "en"}
+{"id": "r083", "split": "dev", "text_language": "nl", "text": "Kunnen we overstappen op het Engels?", "expected": "en"}
+{"id": "r084", "split": "dev", "text_language": "ar", "text": "هل يمكنك التحدث باللغة الإنجليزية؟", "expected": "en"}
+{"id": "r085", "split": "dev", "text_language": "ar", "text": "هل يمكننا التحدث باللغة الهولندية؟", "expected": "nl"}
+{"id": "r086", "split": "dev", "text_language": "ar", "text": "تتكلم عربي؟", "expected": "ar"}
+{"id": "r087", "split": "dev", "text_language": "ar", "text": "بتحكي عربي؟", "expected": "ar"}
+{"id": "r088", "split": "dev", "text_language": "ar", "text": "ممكن عربي؟", "expected": "ar"}
+{"id": "r089", "split": "dev", "text_language": "ar", "text": "أبغى أتكلم عربي", "expected": "ar"}
+{"id": "r090", "split": "dev", "text_language": "ar", "text": "ابي اتكلم عربي", "expected": "ar"}
+{"id": "r091", "split": "dev", "text_language": "ar", "text": "عاوز أتكلم عربي", "expected": "ar"}
+{"id": "r092", "split": "dev", "text_language": "ar", "text": "لا بالعربي لو سمحت", "expected": "ar"}
+{"id": "r093", "split": "dev", "text_language": "ar", "text": "ما رأيك نتكلم عربي؟", "expected": "ar"}
+{"id": "r094", "split": "dev", "text_language": "ar", "text": "ممکن نتکلم عربی؟", "expected": "ar"}
+{"id": "r095", "split": "dev", "text_language": "en", "text": "can we speak dutch my english is not great", "expected": "nl"}
+{"id": "r096", "split": "dev", "text_language": "ar", "text": "ممكن نتكلم عربي ولا انجليزي؟", "expected": null}
+{"id": "r097", "split": "dev", "text_language": "en", "text": "Can we go back to English?", "expected": "en"}
+{"id": "r098", "split": "dev", "text_language": "en", "text": "Could you switch back to Dutch?", "expected": "nl"}
+{"id": "r099", "split": "dev", "text_language": "nl", "text": "Kunnen we teruggaan naar het Engels?", "expected": "en"}
+{"id": "r100", "split": "dev", "text_language": "ar", "text": "ممكن نرجع للعربي؟", "expected": "ar"}
