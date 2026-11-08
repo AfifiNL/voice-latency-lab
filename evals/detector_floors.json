@@ -1,0 +1,11 @@
+{
+  "_written": "2026-11-08 23:10 CET, before the first run of the detector on the corpus, and not changed after it.",
+  "_why": "A wrong language is the costly error (the agent answers in a language the caller did not use); undetermined only keeps the current language. So wrong-rate ceilings are tight and correct-rate floors are looser for the short-sentence languages.",
+  "languages": {
+    "en": {"min_correct": 0.85, "max_wrong": 0.03},
+    "nl": {"min_correct": 0.85, "max_wrong": 0.03},
+    "ar": {"min_correct": 0.95, "max_wrong": 0.03}
+  },
+  "undetermined_expected": {"min_undetermined": 0.80},
+  "requests": {"min_recall": 0.85, "max_false_positive_rate": 0.10, "max_wrong_target": 0}
+}

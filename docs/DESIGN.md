@@ -28,10 +28,46 @@ languages that share short words with English (Polish "a", "i", "to") can be rea
 ("ja ja ja", "no no no") and politeness words ("ok", "thanks", "شكرا") are not evidence of a
 language change.
 
+**Explicit requests bypass the hysteresis.** Hysteresis protects against switching on a quote
+or a stray sentence; it should not make a caller who asks "can we speak Dutch?" wait another
+turn. Requests are recognised by patterns, not by a model: a target language name inside a
+request frame, in any of the three languages (`switch_requests.py`). The frames are narrow on
+purpose, because a false request switches the call at once with no second chance: a mention
+("my Dutch is bad", "the manual is in English"), a third-person statement ("my children speak
+Dutch"), a negated request in the same clause ("please don't switch to Dutch", "لا تتكلم
+الإنجليزية") and a turn asking for two languages are all ignored. Arabic is matched after
+removing diacritics and unifying alef, taa marbuta and alef maqsura, so "بالعربية", "بالعربي" and
+"بِالعَرَبِيَّةِ" are the same. A request for the current language cancels a pending switch.
+
 **Hysteresis with "ignore, don't reset".** Non-substantial turns neither count towards a switch
 nor cancel one in progress. Otherwise "ja" between two Dutch sentences would either switch too
 early (if it counted) or block a switch the caller clearly wants (if it reset). A substantial
 turn in the current language does reset the streak.
+
+**A labelled corpus and a gate for the detector.** `data/detector_corpus.jsonl` (220 items) and
+`data/requests.jsonl` (57 items) were written and split into `dev` and `test` before the first
+run, and `evals/detector_floors.json` was written before it too: per language at least 85 %
+correct (95 % for Arabic, which is recognised by script) and at most 3 % wrong, since a wrong
+language costs more than an undetermined one; at least 80 % undetermined where that is the right
+answer; request recall at least 85 %, near misses read as requests at most 10 %, and no request
+with the wrong target. History, so the numbers can be judged:
+
+1. First run, `dev` only: English 29/31 correct (2 undetermined: "The password reset email never
+   arrived.", "Is the blue model still available?"), Dutch 31/31, Arabic 33/33, undetermined
+   13/15 (wrong: "Can I pay met pin?" as English, "no no no" as English), requests 17/17, near
+   misses 0/12. Floors met.
+2. Two general changes on `dev`: text made only of fillers is undetermined, and 22 common
+   function words were added (14 English, 8 Dutch: "never", "still", "only", "also",
+   "because", ...; "nooit", "alleen", "terwijl", ...). Not added: anything aimed at the remaining
+   mixed-sentence miss.
+3. `test`, run once: English 31/31, Dutch 31/31, Arabic 33/33, undetermined 14/15 (wrong:
+   "مرحبا" as Arabic), requests 17/17, near misses 0/11.
+4. Afterwards the demo showed that "can we go back to English?" was not recognised; "go back
+   (to)" and "switch back to" were added to the English request frames. Both splits were re-run
+   with unchanged results.
+
+The corpus is the author's own clean text, so these numbers mostly show consistency and guard
+against regressions; they do not predict accuracy on speech-to-text output.
 
 **Speculation keeps a reply only for the same words in the same language.** An earlier version
 kept a speculation when the final transcript was 90 % similar to the interim; a review showed
@@ -109,6 +145,8 @@ checks it against the real event classes after an upgrade.
 | setting | value | why |
 |---|---|---|
 | `switch_after` | 2 | one turn can be a quote, a name or a polite word in another language |
+| explicit requests | on, narrow frames | a false request switches at once, so precision before recall |
+| detector floors | `evals/detector_floors.json` | written before the first corpus run |
 | `min_words` | 3 distinct non-filler words | below this, function-word evidence is too thin to act on |
 | `min_function_words`, `min_margin` | 2, 0.5 | a single function word, or a near tie, is not evidence |
 | speculation keep rule | same words, same language | see above; no threshold to tune |

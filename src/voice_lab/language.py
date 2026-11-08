@@ -13,11 +13,13 @@ Detection is deliberately small and explainable:
     contain "de" or "en" is not Dutch.
   * A reply with too little evidence is "undetermined" rather than guessed.
 
-The policy switches the reply language only after N consecutive *substantial* replies in a new
-language (default 2). A reply is substantial when its language is determined and it has at
-least `min_words` distinct words that are not fillers ("ok", "ja ja ja", "no no no" are not
-substantial). Other replies neither count towards a switch nor reset one in progress, so a
-one-word answer or a quoted name never flips the conversation.
+An explicit request ("can we speak Dutch?", "kunnen we in het Engels verder?", "بالعربي لو
+سمحت") switches at once (see `switch_requests`). Otherwise the policy switches the reply
+language only after N consecutive *substantial* replies in a new language (default 2). A reply
+is substantial when its language is determined and it has at least `min_words` distinct words
+that are not fillers ("ok", "ja ja ja", "no no no" are not substantial). Other replies neither
+count towards a switch nor reset one in progress, so a one-word answer or a quoted name never
+flips the conversation.
 """
 
 from __future__ import annotations
@@ -36,7 +38,8 @@ EN_WORDS = frozenset(
     please thanks thank can could would should will have has do does did your they he she be at
     from by just about which who why today tomorrow yes no need like get know think if or so all
     some any more than then up out our us been were am my mine yours their them its these those
-    very really much many again here's i'm it's don't can't won't let's
+    very really much many again here's i'm it's don't can't won't let's never still only also
+    into after before because while every other same since until
     """.split()
 )
 NL_WORDS = frozenset(
@@ -46,7 +49,8 @@ NL_WORDS = frozenset(
     moet morgen vandaag wij ze zij hier daar deze dit geen wel dus omdat te uit hij haar hem ons
     onze jullie waarom welke kunt kun zou zal gaat ga gaan mag mogen alles iets niets veel meer
     al toch nu dan toen tegen zonder tussen na sinds tot nee ja hoeveel misschien kunnen willen
-    mij jou jouw uw ben bent wordt worden werd zich
+    mij jou jouw uw ben bent wordt worden werd zich nooit alleen voordat terwijl elke ander andere
+    zelfde
     """.split()
 )
 # Function words of other Latin-script languages, none of which is in the two lists above.
@@ -126,6 +130,8 @@ def detect(text: str, cfg: DetectorConfig = DEFAULT_DETECTOR) -> Detection:
     distinct = len(content_words(clean))
     if not letters:
         return Detection(None, 0.0, distinct, "no letters")
+    if distinct == 0:
+        return Detection(None, 0.0, 0, "only fillers")
     arabic = sum(1 for ch in letters if _is_arabic(ch))
     if arabic / len(letters) >= 0.5:
         if any(ch in _NON_ARABIC_LETTERS for ch in letters):
@@ -155,6 +161,7 @@ class PolicyConfig:
     switch_after: int = 2  # consecutive substantial replies in the new language
     min_words: int = 3  # distinct non-filler words a substantial reply needs
     detector: DetectorConfig = field(default_factory=DetectorConfig)
+    explicit_requests: bool = True  # "can we speak Dutch?" switches at once
 
 
 @dataclass(frozen=True)
@@ -166,6 +173,7 @@ class Decision:
     candidate: Language | None
     streak: int
     reason: str
+    explicit: bool = False  # decided by an explicit request, not by detection
 
 
 class LanguagePolicy:
@@ -182,7 +190,17 @@ class LanguagePolicy:
         self.streak = 0
 
     def observe(self, text: str) -> Decision:
+        from voice_lab.switch_requests import find_request  # avoids an import cycle
+
         d = detect(text, self.cfg.detector)
+        request = find_request(text) if self.cfg.explicit_requests else None
+        if request is not None:
+            before = self.current
+            switched = request.language != before
+            self.current, self.candidate, self.streak = request.language, None, 0
+            what = f"switch {before} -> {request.language}" if switched else f"keep {before}"
+            reason = f'explicit request ("{request.phrase}"): {what}'
+            return Decision(self.current, switched, d, True, None, 0, reason, explicit=True)
         lang = d.language
         substantial = lang is not None and d.words >= self.cfg.min_words
         switched = False

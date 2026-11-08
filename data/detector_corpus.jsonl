@@ -1,0 +1,220 @@
+{"id": "d001", "split": "dev", "text": "Hi, I'm calling about the invoice I received last week.", "expected": "en", "kind": "sentence"}
+{"id": "d002", "split": "test", "text": "Could you tell me when the technician will arrive?", "expected": "en", "kind": "sentence"}
+{"id": "d003", "split": "dev", "text": "I ordered a lamp and it arrived broken.", "expected": "en", "kind": "sentence"}
+{"id": "d004", "split": "test", "text": "The app keeps logging me out every few minutes.", "expected": "en", "kind": "sentence"}
+{"id": "d005", "split": "dev", "text": "Is there any way to change the delivery address?", "expected": "en", "kind": "sentence"}
+{"id": "d006", "split": "test", "text": "I need to cancel my subscription before the end of the month.", "expected": "en", "kind": "sentence"}
+{"id": "d007", "split": "dev", "text": "My card was charged twice for the same order.", "expected": "en", "kind": "sentence"}
+{"id": "d008", "split": "test", "text": "Can I speak to someone about a refund?", "expected": "en", "kind": "sentence"}
+{"id": "d009", "split": "dev", "text": "The password reset email never arrived.", "expected": "en", "kind": "sentence"}
+{"id": "d010", "split": "test", "text": "We would like to book a table for six on Friday.", "expected": "en", "kind": "sentence"}
+{"id": "d011", "split": "dev", "text": "How long does shipping usually take?", "expected": "en", "kind": "sentence"}
+{"id": "d012", "split": "test", "text": "I've been waiting for over an hour.", "expected": "en", "kind": "sentence"}
+{"id": "d013", "split": "dev", "text": "The heating in my apartment is not working.", "expected": "en", "kind": "sentence"}
+{"id": "d014", "split": "test", "text": "Do you deliver on weekends?", "expected": "en", "kind": "sentence"}
+{"id": "d015", "split": "dev", "text": "I want to upgrade to the family plan.", "expected": "en", "kind": "sentence"}
+{"id": "d016", "split": "test", "text": "Where can I find my order number?", "expected": "en", "kind": "sentence"}
+{"id": "d017", "split": "dev", "text": "The printer shows an error and won't start.", "expected": "en", "kind": "sentence"}
+{"id": "d018", "split": "test", "text": "Could you send me a copy of the contract?", "expected": "en", "kind": "sentence"}
+{"id": "d019", "split": "dev", "text": "I think there is a mistake on my bill.", "expected": "en", "kind": "sentence"}
+{"id": "d020", "split": "test", "text": "Is the store open on public holidays?", "expected": "en", "kind": "sentence"}
+{"id": "d021", "split": "dev", "text": "My parcel says delivered but I don't have it.", "expected": "en", "kind": "sentence"}
+{"id": "d022", "split": "test", "text": "Can you help me set up the new router?", "expected": "en", "kind": "sentence"}
+{"id": "d023", "split": "dev", "text": "I'd like to move my appointment to the afternoon.", "expected": "en", "kind": "sentence"}
+{"id": "d024", "split": "test", "text": "The screen on my phone cracked after two days.", "expected": "en", "kind": "sentence"}
+{"id": "d025", "split": "dev", "text": "How much does it cost to add another user?", "expected": "en", "kind": "sentence"}
+{"id": "d026", "split": "test", "text": "I am calling on behalf of my mother.", "expected": "en", "kind": "sentence"}
+{"id": "d027", "split": "dev", "text": "There is water leaking from the ceiling.", "expected": "en", "kind": "sentence"}
+{"id": "d028", "split": "test", "text": "We never received the second half of the order.", "expected": "en", "kind": "sentence"}
+{"id": "d029", "split": "dev", "text": "What do I need to bring to the appointment?", "expected": "en", "kind": "sentence"}
+{"id": "d030", "split": "test", "text": "Can you check if my payment went through?", "expected": "en", "kind": "sentence"}
+{"id": "d031", "split": "dev", "text": "The website won't let me log in.", "expected": "en", "kind": "sentence"}
+{"id": "d032", "split": "test", "text": "I would like to make a complaint.", "expected": "en", "kind": "sentence"}
+{"id": "d033", "split": "dev", "text": "Is it possible to pay in instalments?", "expected": "en", "kind": "sentence"}
+{"id": "d034", "split": "test", "text": "My flight was moved and I need to rebook.", "expected": "en", "kind": "sentence"}
+{"id": "d035", "split": "dev", "text": "The battery drains really fast since the update.", "expected": "en", "kind": "sentence"}
+{"id": "d036", "split": "test", "text": "Who should I contact about a damaged item?", "expected": "en", "kind": "sentence"}
+{"id": "d037", "split": "dev", "text": "I lost my membership card.", "expected": "en", "kind": "sentence"}
+{"id": "d038", "split": "test", "text": "Please send the invoice to my work address.", "expected": "en", "kind": "sentence"}
+{"id": "d039", "split": "dev", "text": "Thanks, that's all I needed for today.", "expected": "en", "kind": "sentence"}
+{"id": "d040", "split": "test", "text": "I tried that already and it still doesn't work.", "expected": "en", "kind": "sentence"}
+{"id": "d041", "split": "dev", "text": "Could you repeat the last part?", "expected": "en", "kind": "sentence"}
+{"id": "d042", "split": "test", "text": "The delivery driver left the package at the wrong house.", "expected": "en", "kind": "sentence"}
+{"id": "d043", "split": "dev", "text": "How do I change my phone number in the account?", "expected": "en", "kind": "sentence"}
+{"id": "d044", "split": "test", "text": "I'm not happy with the quality of the repair.", "expected": "en", "kind": "sentence"}
+{"id": "d045", "split": "dev", "text": "Is there a discount for students?", "expected": "en", "kind": "sentence"}
+{"id": "d046", "split": "test", "text": "My order has been stuck in processing for days.", "expected": "en", "kind": "sentence"}
+{"id": "d047", "split": "dev", "text": "We need someone to come and look at the boiler.", "expected": "en", "kind": "sentence"}
+{"id": "d048", "split": "test", "text": "Can I return something without the receipt?", "expected": "en", "kind": "sentence"}
+{"id": "d049", "split": "dev", "text": "The meeting room booking disappeared from the system.", "expected": "en", "kind": "sentence"}
+{"id": "d050", "split": "test", "text": "I got a message saying my account was locked.", "expected": "en", "kind": "sentence"}
+{"id": "d051", "split": "dev", "text": "Which documents do you need from me?", "expected": "en", "kind": "sentence"}
+{"id": "d052", "split": "test", "text": "It's about the order I placed yesterday evening.", "expected": "en", "kind": "sentence"}
+{"id": "d053", "split": "dev", "text": "Sorry, the line was bad, what did you say?", "expected": "en", "kind": "sentence"}
+{"id": "d054", "split": "test", "text": "I want to know the status of my claim.", "expected": "en", "kind": "sentence"}
+{"id": "d055", "split": "dev", "text": "Is the blue model still available?", "expected": "en", "kind": "sentence"}
+{"id": "d056", "split": "test", "text": "The coffee machine is making a strange noise.", "expected": "en", "kind": "sentence"}
+{"id": "d057", "split": "dev", "text": "Yes, that is my date of birth.", "expected": "en", "kind": "sentence"}
+{"id": "d058", "split": "test", "text": "Okay, so what happens next?", "expected": "en", "kind": "sentence"}
+{"id": "d059", "split": "dev", "text": "Great, thank you for your help.", "expected": "en", "kind": "sentence"}
+{"id": "d060", "split": "test", "text": "Just checking whether you received my email.", "expected": "en", "kind": "sentence"}
+{"id": "d061", "split": "dev", "text": "Hallo, ik bel over de factuur van vorige week.", "expected": "nl", "kind": "sentence"}
+{"id": "d062", "split": "test", "text": "Kunt u mij vertellen wanneer de monteur komt?", "expected": "nl", "kind": "sentence"}
+{"id": "d063", "split": "dev", "text": "Ik heb een lamp besteld en hij is kapot aangekomen.", "expected": "nl", "kind": "sentence"}
+{"id": "d064", "split": "test", "text": "De app logt mij steeds uit.", "expected": "nl", "kind": "sentence"}
+{"id": "d065", "split": "dev", "text": "Is het mogelijk om het afleveradres te wijzigen?", "expected": "nl", "kind": "sentence"}
+{"id": "d066", "split": "test", "text": "Ik wil mijn abonnement opzeggen voor het einde van de maand.", "expected": "nl", "kind": "sentence"}
+{"id": "d067", "split": "dev", "text": "Er is twee keer geld afgeschreven voor dezelfde bestelling.", "expected": "nl", "kind": "sentence"}
+{"id": "d068", "split": "test", "text": "Kan ik iemand spreken over een terugbetaling?", "expected": "nl", "kind": "sentence"}
+{"id": "d069", "split": "dev", "text": "De mail om mijn wachtwoord te herstellen is nooit aangekomen.", "expected": "nl", "kind": "sentence"}
+{"id": "d070", "split": "test", "text": "We willen graag een tafel reserveren voor zes personen op vrijdag.", "expected": "nl", "kind": "sentence"}
+{"id": "d071", "split": "dev", "text": "Hoe lang duurt de verzending meestal?", "expected": "nl", "kind": "sentence"}
+{"id": "d072", "split": "test", "text": "Ik wacht al meer dan een uur.", "expected": "nl", "kind": "sentence"}
+{"id": "d073", "split": "dev", "text": "De verwarming in mijn appartement doet het niet.", "expected": "nl", "kind": "sentence"}
+{"id": "d074", "split": "test", "text": "Bezorgen jullie ook in het weekend?", "expected": "nl", "kind": "sentence"}
+{"id": "d075", "split": "dev", "text": "Ik wil overstappen naar het gezinsabonnement.", "expected": "nl", "kind": "sentence"}
+{"id": "d076", "split": "test", "text": "Waar vind ik mijn bestelnummer?", "expected": "nl", "kind": "sentence"}
+{"id": "d077", "split": "dev", "text": "De printer geeft een foutmelding en start niet op.", "expected": "nl", "kind": "sentence"}
+{"id": "d078", "split": "test", "text": "Kunt u mij een kopie van het contract sturen?", "expected": "nl", "kind": "sentence"}
+{"id": "d079", "split": "dev", "text": "Ik denk dat er een fout in mijn rekening staat.", "expected": "nl", "kind": "sentence"}
+{"id": "d080", "split": "test", "text": "Is de winkel open op feestdagen?", "expected": "nl", "kind": "sentence"}
+{"id": "d081", "split": "dev", "text": "Volgens de status is mijn pakket bezorgd, maar ik heb het niet.", "expected": "nl", "kind": "sentence"}
+{"id": "d082", "split": "test", "text": "Kunt u mij helpen met het instellen van de nieuwe router?", "expected": "nl", "kind": "sentence"}
+{"id": "d083", "split": "dev", "text": "Ik wil mijn afspraak graag naar de middag verplaatsen.", "expected": "nl", "kind": "sentence"}
+{"id": "d084", "split": "test", "text": "Het scherm van mijn telefoon is na twee dagen gebarsten.", "expected": "nl", "kind": "sentence"}
+{"id": "d085", "split": "dev", "text": "Wat kost het om een extra gebruiker toe te voegen?", "expected": "nl", "kind": "sentence"}
+{"id": "d086", "split": "test", "text": "Ik bel namens mijn moeder.", "expected": "nl", "kind": "sentence"}
+{"id": "d087", "split": "dev", "text": "Er lekt water uit het plafond.", "expected": "nl", "kind": "sentence"}
+{"id": "d088", "split": "test", "text": "We hebben de tweede helft van de bestelling nooit ontvangen.", "expected": "nl", "kind": "sentence"}
+{"id": "d089", "split": "dev", "text": "Wat moet ik meenemen naar de afspraak?", "expected": "nl", "kind": "sentence"}
+{"id": "d090", "split": "test", "text": "Kunt u controleren of mijn betaling is gelukt?", "expected": "nl", "kind": "sentence"}
+{"id": "d091", "split": "dev", "text": "Ik kan niet inloggen op de website.", "expected": "nl", "kind": "sentence"}
+{"id": "d092", "split": "test", "text": "Ik wil graag een klacht indienen.", "expected": "nl", "kind": "sentence"}
+{"id": "d093", "split": "dev", "text": "Kan ik ook in termijnen betalen?", "expected": "nl", "kind": "sentence"}
+{"id": "d094", "split": "test", "text": "Mijn vlucht is verplaatst en ik moet opnieuw boeken.", "expected": "nl", "kind": "sentence"}
+{"id": "d095", "split": "dev", "text": "De batterij is sinds de update heel snel leeg.", "expected": "nl", "kind": "sentence"}
+{"id": "d096", "split": "test", "text": "Bij wie moet ik zijn voor een beschadigd artikel?", "expected": "nl", "kind": "sentence"}
+{"id": "d097", "split": "dev", "text": "Ik ben mijn pasje kwijt.", "expected": "nl", "kind": "sentence"}
+{"id": "d098", "split": "test", "text": "Wilt u de factuur naar mijn werkadres sturen?", "expected": "nl", "kind": "sentence"}
+{"id": "d099", "split": "dev", "text": "Bedankt, dat was alles voor vandaag.", "expected": "nl", "kind": "sentence"}
+{"id": "d100", "split": "test", "text": "Dat heb ik al geprobeerd en het werkt nog steeds niet.", "expected": "nl", "kind": "sentence"}
+{"id": "d101", "split": "dev", "text": "Kunt u het laatste stuk herhalen?", "expected": "nl", "kind": "sentence"}
+{"id": "d102", "split": "test", "text": "De bezorger heeft het pakket bij het verkeerde huis afgeleverd.", "expected": "nl", "kind": "sentence"}
+{"id": "d103", "split": "dev", "text": "Hoe verander ik mijn telefoonnummer in het account?", "expected": "nl", "kind": "sentence"}
+{"id": "d104", "split": "test", "text": "Ik ben niet tevreden over de kwaliteit van de reparatie.", "expected": "nl", "kind": "sentence"}
+{"id": "d105", "split": "dev", "text": "Is er korting voor studenten?", "expected": "nl", "kind": "sentence"}
+{"id": "d106", "split": "test", "text": "Mijn bestelling staat al dagen op verwerking.", "expected": "nl", "kind": "sentence"}
+{"id": "d107", "split": "dev", "text": "Er moet iemand naar de cv-ketel komen kijken.", "expected": "nl", "kind": "sentence"}
+{"id": "d108", "split": "test", "text": "Kan ik iets terugbrengen zonder bonnetje?", "expected": "nl", "kind": "sentence"}
+{"id": "d109", "split": "dev", "text": "De reservering van de vergaderruimte is uit het systeem verdwenen.", "expected": "nl", "kind": "sentence"}
+{"id": "d110", "split": "test", "text": "Ik kreeg een bericht dat mijn account geblokkeerd is.", "expected": "nl", "kind": "sentence"}
+{"id": "d111", "split": "dev", "text": "Welke documenten heeft u van mij nodig?", "expected": "nl", "kind": "sentence"}
+{"id": "d112", "split": "test", "text": "Het gaat om de bestelling van gisteravond.", "expected": "nl", "kind": "sentence"}
+{"id": "d113", "split": "dev", "text": "Sorry, de verbinding was slecht, wat zei u?", "expected": "nl", "kind": "sentence"}
+{"id": "d114", "split": "test", "text": "Ik wil weten hoe het met mijn claim staat.", "expected": "nl", "kind": "sentence"}
+{"id": "d115", "split": "dev", "text": "Is het blauwe model nog leverbaar?", "expected": "nl", "kind": "sentence"}
+{"id": "d116", "split": "test", "text": "Het koffiezetapparaat maakt een raar geluid.", "expected": "nl", "kind": "sentence"}
+{"id": "d117", "split": "dev", "text": "Ja, dat is mijn geboortedatum.", "expected": "nl", "kind": "sentence"}
+{"id": "d118", "split": "test", "text": "Oké, en wat gebeurt er nu?", "expected": "nl", "kind": "sentence"}
+{"id": "d119", "split": "dev", "text": "Top, bedankt voor de hulp.", "expected": "nl", "kind": "sentence"}
+{"id": "d120", "split": "test", "text": "Ik wilde even checken of u mijn mail heeft ontvangen.", "expected": "nl", "kind": "sentence"}
+{"id": "d121", "split": "dev", "text": "مرحبا، أتصل بخصوص الفاتورة التي وصلتني الأسبوع الماضي.", "expected": "ar", "kind": "sentence"}
+{"id": "d122", "split": "test", "text": "هل يمكنك أن تخبرني متى سيصل الفني؟", "expected": "ar", "kind": "sentence"}
+{"id": "d123", "split": "dev", "text": "طلبت مصباحا ووصل مكسورا.", "expected": "ar", "kind": "sentence"}
+{"id": "d124", "split": "test", "text": "التطبيق يسجل خروجي كل بضع دقائق.", "expected": "ar", "kind": "sentence"}
+{"id": "d125", "split": "dev", "text": "هل يمكن تغيير عنوان التوصيل؟", "expected": "ar", "kind": "sentence"}
+{"id": "d126", "split": "test", "text": "أريد إلغاء اشتراكي قبل نهاية الشهر.", "expected": "ar", "kind": "sentence"}
+{"id": "d127", "split": "dev", "text": "تم خصم المبلغ مرتين لنفس الطلب.", "expected": "ar", "kind": "sentence"}
+{"id": "d128", "split": "test", "text": "هل يمكنني التحدث مع أحد بخصوص استرداد المبلغ؟", "expected": "ar", "kind": "sentence"}
+{"id": "d129", "split": "dev", "text": "لم تصلني رسالة إعادة تعيين كلمة المرور.", "expected": "ar", "kind": "sentence"}
+{"id": "d130", "split": "test", "text": "نريد حجز طاولة لستة أشخاص يوم الجمعة.", "expected": "ar", "kind": "sentence"}
+{"id": "d131", "split": "dev", "text": "كم يستغرق الشحن عادة؟", "expected": "ar", "kind": "sentence"}
+{"id": "d132", "split": "test", "text": "أنا أنتظر منذ أكثر من ساعة.", "expected": "ar", "kind": "sentence"}
+{"id": "d133", "split": "dev", "text": "التدفئة في شقتي لا تعمل.", "expected": "ar", "kind": "sentence"}
+{"id": "d134", "split": "test", "text": "هل توصلون في عطلة نهاية الأسبوع؟", "expected": "ar", "kind": "sentence"}
+{"id": "d135", "split": "dev", "text": "أريد الترقية إلى الباقة العائلية.", "expected": "ar", "kind": "sentence"}
+{"id": "d136", "split": "test", "text": "أين أجد رقم الطلب؟", "expected": "ar", "kind": "sentence"}
+{"id": "d137", "split": "dev", "text": "الطابعة تظهر خطأ ولا تعمل.", "expected": "ar", "kind": "sentence"}
+{"id": "d138", "split": "test", "text": "هل يمكنك أن ترسل لي نسخة من العقد؟", "expected": "ar", "kind": "sentence"}
+{"id": "d139", "split": "dev", "text": "أعتقد أن هناك خطأ في فاتورتي.", "expected": "ar", "kind": "sentence"}
+{"id": "d140", "split": "test", "text": "هل المتجر مفتوح في العطل الرسمية؟", "expected": "ar", "kind": "sentence"}
+{"id": "d141", "split": "dev", "text": "الطرد مسجل كأنه تم تسليمه لكنه لم يصلني.", "expected": "ar", "kind": "sentence"}
+{"id": "d142", "split": "test", "text": "هل تستطيع مساعدتي في إعداد الراوتر الجديد؟", "expected": "ar", "kind": "sentence"}
+{"id": "d143", "split": "dev", "text": "أود نقل موعدي إلى فترة بعد الظهر.", "expected": "ar", "kind": "sentence"}
+{"id": "d144", "split": "test", "text": "انكسرت شاشة هاتفي بعد يومين.", "expected": "ar", "kind": "sentence"}
+{"id": "d145", "split": "dev", "text": "كم تكلفة إضافة مستخدم آخر؟", "expected": "ar", "kind": "sentence"}
+{"id": "d146", "split": "test", "text": "أتصل نيابة عن والدتي.", "expected": "ar", "kind": "sentence"}
+{"id": "d147", "split": "dev", "text": "يتسرب الماء من السقف.", "expected": "ar", "kind": "sentence"}
+{"id": "d148", "split": "test", "text": "لم نستلم النصف الثاني من الطلب.", "expected": "ar", "kind": "sentence"}
+{"id": "d149", "split": "dev", "text": "ماذا يجب أن أحضر معي إلى الموعد؟", "expected": "ar", "kind": "sentence"}
+{"id": "d150", "split": "test", "text": "هل يمكنك التحقق مما إذا كانت الدفعة قد تمت؟", "expected": "ar", "kind": "sentence"}
+{"id": "d151", "split": "dev", "text": "الموقع لا يسمح لي بتسجيل الدخول.", "expected": "ar", "kind": "sentence"}
+{"id": "d152", "split": "test", "text": "أريد تقديم شكوى.", "expected": "ar", "kind": "sentence"}
+{"id": "d153", "split": "dev", "text": "هل يمكن الدفع على أقساط؟", "expected": "ar", "kind": "sentence"}
+{"id": "d154", "split": "test", "text": "تم تغيير موعد رحلتي وأحتاج إلى حجز جديد.", "expected": "ar", "kind": "sentence"}
+{"id": "d155", "split": "dev", "text": "البطارية تفرغ بسرعة كبيرة منذ التحديث.", "expected": "ar", "kind": "sentence"}
+{"id": "d156", "split": "test", "text": "بمن أتصل بخصوص منتج تالف؟", "expected": "ar", "kind": "sentence"}
+{"id": "d157", "split": "dev", "text": "فقدت بطاقة العضوية.", "expected": "ar", "kind": "sentence"}
+{"id": "d158", "split": "test", "text": "من فضلك أرسل الفاتورة إلى عنوان عملي.", "expected": "ar", "kind": "sentence"}
+{"id": "d159", "split": "dev", "text": "شكرا، هذا كل ما احتجته اليوم.", "expected": "ar", "kind": "sentence"}
+{"id": "d160", "split": "test", "text": "جربت ذلك بالفعل وما زال لا يعمل.", "expected": "ar", "kind": "sentence"}
+{"id": "d161", "split": "dev", "text": "هل يمكنك أن تكرر الجزء الأخير؟", "expected": "ar", "kind": "sentence"}
+{"id": "d162", "split": "test", "text": "ترك عامل التوصيل الطرد عند البيت الخطأ.", "expected": "ar", "kind": "sentence"}
+{"id": "d163", "split": "dev", "text": "كيف أغير رقم هاتفي في الحساب؟", "expected": "ar", "kind": "sentence"}
+{"id": "d164", "split": "test", "text": "لست راضيا عن جودة الإصلاح.", "expected": "ar", "kind": "sentence"}
+{"id": "d165", "split": "dev", "text": "هل هناك خصم للطلاب؟", "expected": "ar", "kind": "sentence"}
+{"id": "d166", "split": "test", "text": "طلبي عالق في المعالجة منذ أيام.", "expected": "ar", "kind": "sentence"}
+{"id": "d167", "split": "dev", "text": "نحتاج إلى شخص يأتي ليفحص السخان.", "expected": "ar", "kind": "sentence"}
+{"id": "d168", "split": "test", "text": "هل يمكنني إرجاع شيء بدون إيصال؟", "expected": "ar", "kind": "sentence"}
+{"id": "d169", "split": "dev", "text": "اختفى حجز قاعة الاجتماعات من النظام.", "expected": "ar", "kind": "sentence"}
+{"id": "d170", "split": "test", "text": "وصلتني رسالة تقول إن حسابي مقفل.", "expected": "ar", "kind": "sentence"}
+{"id": "d171", "split": "dev", "text": "ما هي المستندات التي تحتاجها مني؟", "expected": "ar", "kind": "sentence"}
+{"id": "d172", "split": "test", "text": "الموضوع بخصوص الطلب الذي قدمته مساء أمس.", "expected": "ar", "kind": "sentence"}
+{"id": "d173", "split": "dev", "text": "عفوا، الخط كان سيئا، ماذا قلت؟", "expected": "ar", "kind": "sentence"}
+{"id": "d174", "split": "test", "text": "أريد أن أعرف حالة طلب التعويض.", "expected": "ar", "kind": "sentence"}
+{"id": "d175", "split": "dev", "text": "هل الموديل الأزرق ما زال متوفرا؟", "expected": "ar", "kind": "sentence"}
+{"id": "d176", "split": "test", "text": "آلة القهوة تصدر صوتا غريبا.", "expected": "ar", "kind": "sentence"}
+{"id": "d177", "split": "dev", "text": "نعم، هذا تاريخ ميلادي.", "expected": "ar", "kind": "sentence"}
+{"id": "d178", "split": "test", "text": "طيب، وماذا سيحدث بعد ذلك؟", "expected": "ar", "kind": "sentence"}
+{"id": "d179", "split": "dev", "text": "ممتاز، شكرا على مساعدتك.", "expected": "ar", "kind": "sentence"}
+{"id": "d180", "split": "test", "text": "كنت أريد فقط التأكد من أنكم استلمتم بريدي.", "expected": "ar", "kind": "sentence"}
+{"id": "d181", "split": "dev", "text": "ممكن تساعدني أغير كلمة السر؟", "expected": "ar", "kind": "sentence"}
+{"id": "d182", "split": "test", "text": "الطلبية ما وصلت لسا.", "expected": "ar", "kind": "sentence"}
+{"id": "d183", "split": "dev", "text": "عايز أعرف الفاتورة دي ليه غالية كده.", "expected": "ar", "kind": "sentence"}
+{"id": "d184", "split": "test", "text": "شلون أقدر أغير الموعد؟", "expected": "ar", "kind": "sentence"}
+{"id": "d185", "split": "dev", "text": "أُرِيدُ أَنْ أُغَيِّرَ مَوْعِدِي.", "expected": "ar", "kind": "sentence"}
+{"id": "d186", "split": "test", "text": "Je voudrais parler à quelqu'un de mon contrat.", "expected": null, "kind": "other"}
+{"id": "d187", "split": "dev", "text": "Bonjour, ma commande n'est pas arrivée.", "expected": null, "kind": "other"}
+{"id": "d188", "split": "test", "text": "¿Puedo cambiar la dirección de entrega?", "expected": null, "kind": "other"}
+{"id": "d189", "split": "dev", "text": "Hola, tengo un problema con mi factura.", "expected": null, "kind": "other"}
+{"id": "d190", "split": "test", "text": "Ich habe eine Frage zu meiner Rechnung.", "expected": null, "kind": "other"}
+{"id": "d191", "split": "dev", "text": "Guten Tag, mein Paket ist nicht angekommen.", "expected": null, "kind": "other"}
+{"id": "d192", "split": "test", "text": "Vorrei parlare con un operatore.", "expected": null, "kind": "other"}
+{"id": "d193", "split": "dev", "text": "Olá, quero cancelar a minha assinatura.", "expected": null, "kind": "other"}
+{"id": "d194", "split": "test", "text": "Dzień dobry, mam problem z zamówieniem.", "expected": null, "kind": "other"}
+{"id": "d195", "split": "dev", "text": "Merhaba, siparişim gelmedi.", "expected": null, "kind": "other"}
+{"id": "d196", "split": "test", "text": "من می‌خواهم سفارشم را لغو کنم", "expected": null, "kind": "other"}
+{"id": "d197", "split": "dev", "text": "میرا آرڈر ابھی تک نہیں آیا", "expected": null, "kind": "other"}
+{"id": "d198", "split": "test", "text": "Ik need help with mijn order please", "expected": null, "kind": "mixed"}
+{"id": "d199", "split": "dev", "text": "Can I pay met pin?", "expected": null, "kind": "mixed"}
+{"id": "d200", "split": "test", "text": "ok", "expected": null, "kind": "short"}
+{"id": "d201", "split": "dev", "text": "ja", "expected": null, "kind": "short"}
+{"id": "d202", "split": "test", "text": "nee", "expected": null, "kind": "short"}
+{"id": "d203", "split": "dev", "text": "yes", "expected": null, "kind": "short"}
+{"id": "d204", "split": "test", "text": "شكرا", "expected": null, "kind": "short"}
+{"id": "d205", "split": "dev", "text": "12345", "expected": null, "kind": "short"}
+{"id": "d206", "split": "test", "text": "Westerbrook", "expected": null, "kind": "short"}
+{"id": "d207", "split": "dev", "text": "uh hmm", "expected": null, "kind": "short"}
+{"id": "d208", "split": "test", "text": "ja ja ja", "expected": null, "kind": "short"}
+{"id": "d209", "split": "dev", "text": "no no no", "expected": null, "kind": "short"}
+{"id": "d210", "split": "test", "text": "Order A-1042", "expected": null, "kind": "short"}
+{"id": "d211", "split": "dev", "text": "sorry?", "expected": null, "kind": "short"}
+{"id": "d212", "split": "test", "text": "hello?", "expected": null, "kind": "short"}
+{"id": "d213", "split": "dev", "text": "alright", "expected": null, "kind": "short"}
+{"id": "d214", "split": "test", "text": "مرحبا", "expected": null, "kind": "short"}
+{"id": "d215", "split": "dev", "text": "ok, thanks", "expected": null, "kind": "short"}
+{"id": "d216", "split": "test", "text": "Hello, ik wil graag een afspraak maken voor volgende week.", "expected": "nl", "kind": "mixed"}
+{"id": "d217", "split": "dev", "text": "Sorry hoor, can you tell me where my order is?", "expected": "en", "kind": "mixed"}
+{"id": "d218", "split": "test", "text": "Thanks! هل يمكنني تغيير الموعد؟", "expected": "ar", "kind": "mixed"}
+{"id": "d219", "split": "dev", "text": "Mijn laptop heeft een blue screen error na de update.", "expected": "nl", "kind": "mixed"}
+{"id": "d220", "split": "test", "text": "The form asks for my BSN nummer, what is that?", "expected": "en", "kind": "mixed"}

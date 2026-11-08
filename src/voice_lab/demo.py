@@ -13,11 +13,12 @@ from voice_lab.speculative import SpeculativeResponder
 CONVERSATION = [
     "Hello, I would like to ask about my order please.",
     "ok",
-    "Eigenlijk spreek ik liever Nederlands, als dat kan.",
+    "Ik heb een vraag over mijn bestelling van vorige week.",
     "ja",
     "Kunt u kijken waar mijn pakket nu is?",
     "Thanks!",
-    "Ik wil graag weten wanneer het pakket komt.",
+    "Sorry, can we go back to English? My colleague is listening too.",
+    "My Dutch is not very good anyway.",
 ]
 
 
@@ -39,7 +40,7 @@ async def _speculative_turns() -> None:
 
 
 def run_demo() -> int:
-    print("== 1. reply language over a conversation (switch after 2 substantial replies)")
+    print("== 1. reply language: 2 substantial turns switch it, an explicit request at once")
     policy = LanguagePolicy()
     for line in CONVERSATION:
         d = policy.observe(line)

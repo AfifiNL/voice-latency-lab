@@ -10,7 +10,8 @@ LIVE_CALLS ?= 24
 LIVE ?= VOICE_LAB_GEMINI_VERTEX=true VOICE_LAB_GEMINI_LOCATION=eu \
         VOICE_LAB_GEMINI_MODEL=gemini-3.6-flash VOICE_LAB_MAX_LIVE_CALLS=$(LIVE_CALLS)
 
-.PHONY: help install lint fmt typecheck test bench bench-baseline ttft-check record-ttft demo check
+.PHONY: help install lint fmt typecheck test bench bench-baseline ttft-check detector-check \
+        record-ttft demo check
 
 help:            ## list targets
 	@grep -E '^[a-z-]+:.*## ' $(MAKEFILE_LIST) | sed 's/:.*## /\t/'
@@ -45,6 +46,9 @@ ttft-check:      ## the recorded live TTFT run still matches its committed summa
 	$(CLI) ttft-report $(TTFT) --review fixtures/live-ttft-review.json \
 	  --check fixtures/live-ttft.summary.json
 
+detector-check:  ## detector + request accuracy on the labelled corpora, against frozen floors
+	$(CLI) eval-detector --floors evals/detector_floors.json
+
 record-ttft:     ## LIVE: re-record TTFT at thinking minimal and low (costs money)
 	$(LIVE) $(CLI) record-ttft --thinking minimal --out $(TTFT)
 	$(LIVE) $(CLI) record-ttft --thinking low --out $(TTFT)
@@ -52,4 +56,4 @@ record-ttft:     ## LIVE: re-record TTFT at thinking minimal and low (costs mone
 demo:            ## offline demo: language policy, speculative turn, simulated latency
 	$(CLI) demo
 
-check: lint typecheck test bench ttft-check  ## everything CI runs
+check: lint typecheck test bench ttft-check detector-check  ## everything CI runs

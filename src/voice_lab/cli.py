@@ -132,6 +132,37 @@ def _record_ttft(args: argparse.Namespace) -> int:  # pragma: no cover - live ca
     return 0
 
 
+def _eval_detector(args: argparse.Namespace) -> int:
+    from voice_lab import evaluate
+
+    det_rows = evaluate.load(Path(args.corpus))
+    req_rows = evaluate.load(Path(args.requests))
+    if args.split != "all":
+        det_rows = [r for r in det_rows if r["split"] == args.split]
+        req_rows = [r for r in req_rows if r["split"] == args.split]
+    det = evaluate.detector_scores(det_rows)
+    req = evaluate.request_scores(req_rows)
+    print(f"split: {args.split}")
+    print(evaluate.table(det, req))
+    if args.show_misses:
+        for cls, s in det.items():
+            for m in s["misses"]:
+                print(f"  miss [{cls}] {m['id']}: got {m['got']}  | {m['text']}")
+        for m in req["misses"]:
+            print(
+                f"  miss [request] {m['id']}: expected {m['expected']}, got {m['got']}"
+                f"  | {m['text']}"
+            )
+    if args.floors:
+        floors = json.loads(Path(args.floors).read_text(encoding="utf-8"))
+        problems = evaluate.check(det, req, floors)
+        if problems:
+            print("BELOW FLOOR:\n  " + "\n  ".join(problems))
+            return 1
+        print("floors met")
+    return 0
+
+
 def _demo(_: argparse.Namespace) -> int:
     from voice_lab.demo import run_demo
 
@@ -185,6 +216,13 @@ def main(argv: list[str] | None = None) -> int:
     s.add_argument("--thinking", default="")
     s.add_argument("--limit", type=int, default=0)
     s.set_defaults(fn=_record_ttft)
+    s = sub.add_parser("eval-detector", help="accuracy of language detection and requests")
+    s.add_argument("--corpus", default="data/detector_corpus.jsonl")
+    s.add_argument("--requests", default="data/requests.jsonl")
+    s.add_argument("--split", default="all", choices=["all", "dev", "test"])
+    s.add_argument("--floors", help="fail if below the floors in this JSON file")
+    s.add_argument("--show-misses", action="store_true")
+    s.set_defaults(fn=_eval_detector)
     s = sub.add_parser("demo", help="offline demo: policy, speculation, latency comparison")
     s.set_defaults(fn=_demo)
     args = p.parse_args(argv)

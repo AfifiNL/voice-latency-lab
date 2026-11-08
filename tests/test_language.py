@@ -31,7 +31,7 @@ def test_detects(text: str, lang: str) -> None:
 
 @pytest.mark.parametrize(
     "text",
-    ["ok", "ja", "yes", "12345", "", "?!", "Amsterdam", "مر", "is in", "Hello Jan"],
+    ["ok", "ja", "yes", "12345", "", "?!", "Westerbrook", "مر", "is in", "Hello Jan"],
 )
 def test_short_or_ambiguous_is_undetermined(text: str) -> None:
     assert detect(text).language is None
