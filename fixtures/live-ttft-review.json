@@ -1,0 +1,341 @@
+{
+  "_rubric": "Read by hand on 2026-11-08, every reply, same rubric for both configs. states_business_fact = the reply asserts anything about this shop that the prompt says the model does not know: opening hours, prices, stock, the status of an order, whether a booking or change is possible, or what a policy allows (including 'yes, that is possible'). Not counted: offering to check, promising to look into it or pass it on, asking for details (name, number, order), greetings. names_real_entity = the reply names a real company, organisation, brand, website, street, city or country.",
+  "labels": [
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-1",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-2",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-3",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-4",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-5",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-6",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-7",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "en-8",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-1",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-2",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-3",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-4",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-5",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-6",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-7",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "nl-8",
+      "states_business_fact": true,
+      "names_real_entity": false,
+      "note": "\"dat is zeker mogelijk\" (that is certainly possible): asserts the shop can call back today"
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-1",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-2",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-3",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-4",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-5",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-6",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-7",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-minimal",
+      "id": "ar-8",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-1",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-2",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-3",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-4",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-5",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-6",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-7",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "en-8",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-1",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-2",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-3",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-4",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-5",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-6",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-7",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "nl-8",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-1",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-2",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-3",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-4",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-5",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-6",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-7",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    },
+    {
+      "config": "gemini:gemini-3.6-flash:thinking-low",
+      "id": "ar-8",
+      "states_business_fact": false,
+      "names_real_entity": false,
+      "note": ""
+    }
+  ]
+}

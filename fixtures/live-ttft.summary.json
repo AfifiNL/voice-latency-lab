@@ -1,0 +1,90 @@
+{
+  "gemini:gemini-3.6-flash:thinking-low/all": {
+    "calls": 24,
+    "cold_calls_excluded": 1,
+    "failed_calls": 0,
+    "flagged_in_review": 0,
+    "reply_in_requested_language": 24,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 3558.1,
+    "ttft_p50_ms": 3341.8,
+    "ttft_p95_ms": 4445.0
+  },
+  "gemini:gemini-3.6-flash:thinking-low/ar": {
+    "calls": 8,
+    "cold_calls_excluded": 0,
+    "failed_calls": 0,
+    "flagged_in_review": 0,
+    "reply_in_requested_language": 8,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 3780.3,
+    "ttft_p50_ms": 3691.5,
+    "ttft_p95_ms": 4819.4
+  },
+  "gemini:gemini-3.6-flash:thinking-low/en": {
+    "calls": 8,
+    "cold_calls_excluded": 1,
+    "failed_calls": 0,
+    "flagged_in_review": 0,
+    "reply_in_requested_language": 8,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 3039.0,
+    "ttft_p50_ms": 2901.7,
+    "ttft_p95_ms": 3539.2
+  },
+  "gemini:gemini-3.6-flash:thinking-low/nl": {
+    "calls": 8,
+    "cold_calls_excluded": 0,
+    "failed_calls": 0,
+    "flagged_in_review": 0,
+    "reply_in_requested_language": 8,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 3282.0,
+    "ttft_p50_ms": 3201.9,
+    "ttft_p95_ms": 3605.7
+  },
+  "gemini:gemini-3.6-flash:thinking-minimal/all": {
+    "calls": 24,
+    "cold_calls_excluded": 1,
+    "failed_calls": 0,
+    "flagged_in_review": 1,
+    "reply_in_requested_language": 24,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 769.6,
+    "ttft_p50_ms": 602.1,
+    "ttft_p95_ms": 714.6
+  },
+  "gemini:gemini-3.6-flash:thinking-minimal/ar": {
+    "calls": 8,
+    "cold_calls_excluded": 0,
+    "failed_calls": 0,
+    "flagged_in_review": 0,
+    "reply_in_requested_language": 8,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 770.2,
+    "ttft_p50_ms": 571.6,
+    "ttft_p95_ms": 723.6
+  },
+  "gemini:gemini-3.6-flash:thinking-minimal/en": {
+    "calls": 8,
+    "cold_calls_excluded": 1,
+    "failed_calls": 0,
+    "flagged_in_review": 0,
+    "reply_in_requested_language": 8,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 754.2,
+    "ttft_p50_ms": 597.0,
+    "ttft_p95_ms": 714.6
+  },
+  "gemini:gemini-3.6-flash:thinking-minimal/nl": {
+    "calls": 8,
+    "cold_calls_excluded": 0,
+    "failed_calls": 0,
+    "flagged_in_review": 1,
+    "reply_in_requested_language": 8,
+    "reply_language_undetermined": 0,
+    "total_p50_ms": 781.5,
+    "ttft_p50_ms": 630.7,
+    "ttft_p95_ms": 712.2
+  }
+}
