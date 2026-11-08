@@ -193,16 +193,17 @@ class LanguagePolicy:
         from voice_lab.switch_requests import find_request  # avoids an import cycle
 
         d = detect(text, self.cfg.detector)
+        lang = d.language
+        substantial = lang is not None and d.words >= self.cfg.min_words
         request = find_request(text) if self.cfg.explicit_requests else None
         if request is not None:
+            # `substantial` still describes the detection; the request alone decides here.
             before = self.current
             switched = request.language != before
             self.current, self.candidate, self.streak = request.language, None, 0
             what = f"switch {before} -> {request.language}" if switched else f"keep {before}"
             reason = f'explicit request ("{request.phrase}"): {what}'
-            return Decision(self.current, switched, d, True, None, 0, reason, explicit=True)
-        lang = d.language
-        substantial = lang is not None and d.words >= self.cfg.min_words
+            return Decision(self.current, switched, d, substantial, None, 0, reason, explicit=True)
         switched = False
         if lang is None or not substantial:
             reason = "ignored: " + (d.reason if lang is None else "too few distinct words")

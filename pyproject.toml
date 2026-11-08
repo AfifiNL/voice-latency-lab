@@ -46,7 +46,8 @@ select = ["E", "F", "W", "I", "B", "UP", "SIM", "RUF", "S", "PT"]
 "tests/**" = ["S", "RUF001"]  # tests contain Arabic and Persian text on purpose
 "scripts/**" = ["S101"]
 "src/voice_lab/language.py" = ["SIM905", "RUF001"]  # word lists (incl. Arabic) as split strings
-"src/voice_lab/switch_requests.py" = ["RUF001"]  # Arabic patterns on purpose
+# Arabic word lists as split strings; one nested `if` per request frame reads better.
+"src/voice_lab/switch_requests.py" = ["RUF001", "SIM905", "SIM102"]
 
 [tool.mypy]
 python_version = "3.12"
